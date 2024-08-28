@@ -335,18 +335,8 @@
 
             document.getElementById('result').innerHTML = `Dose de exposição: ${dose.toFixed(2)}<br>${resultado}`;
         }
-        function calcularInsalubridade() {
-            const salario = parseFloat(document.getElementById('salario').value) || 0;
-            const percentual = parseFloat(document.getElementById('percentual').value) || 0;
-
-            const adicional = (salario * percentual) / 100;
-            const salarioFinal = salario + adicional;
-
-            document.getElementById('result').innerHTML = `
-                Adicional de Insalubridade: R$ ${adicional.toFixed(2)}<br>
-                Salário com Insalubridade: R$ ${salarioFinal.toFixed(2)}
-            `;
-        }
+        
+        
     </script>
 </body>
 </html>
