@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Insalubridade - NR-15 Ruído</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #c85fdd;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #eb88e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eb88e6;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eb88e6;
+            color: #fff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #eb88e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eb88e6;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   
+        <div id="result"></div>
+
+        <h2>O que é Insalubridade?</h2>
+        <p>
+            Insalubridade é uma condição de trabalho onde o trabalhador é exposto a agentes nocivos à saúde acima dos limites estabelecidos pela legislação. 
+            Esses agentes podem ser químicos, físicos ou biológicos, e quando a exposição ultrapassa certos limites, o trabalhador tem direito a um adicional 
+            de insalubridade, que varia de 10% a 40% sobre o salário mínimo.
+        </p>
+
+        <h2>O que é a NR-15?</h2>
+        <p>
+            A Norma Regulamentadora 15 (NR-15) estabelece limites de exposição para diversas condições de trabalho insalubres, incluindo exposição a ruídos. 
+            O anexo da NR-15 trata dos limites de tolerância ao ruído contínuo ou intermitente. Estes limites definem o tempo máximo de exposição diária 
+            ao ruído, baseado no nível de decibéis (dB). Se esses limites forem ultrapassados, o trabalhador é considerado exposto a condições insalubres.
+        </p>
+
+        <h2>Tabela NR-15: Limites de Exposição a Ruído</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nível de Ruído (dB)</th>
+                    <th>Tempo Máximo de Exposição (horas)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>85 dB</td>
+                    <td>8 horas</td>
+                </tr>
+                <tr>
+                    <td>86 dB</td>
+                    <td>6,7 horas</td>
+                </tr>
+                <tr>
+                    <td>87 dB</td>
+                    <td>5,3 horas</td>
+                </tr>
+                <tr>
+                    <td>88 dB</td>
+                    <td>4,2 horas</td>
+                </tr>
+                <tr>
+                    <td>89 dB</td>
+                    <td>3,3 horas</td>
+                </tr>
+                <tr>
+                    <td>90 dB</td>
+                    <td>2,6 horas</td>
+                </tr>
+                <tr>
+                    <td>91 dB</td>
+                    <td>2,1 horas</td>
+                </tr>
+                <tr>
+                    <td>92 dB</td>
+                    <td>1,7 horas</td>
+                </tr>
+                <tr>
+                    <td>93 dB</td>
+                    <td>1,4 horas</td>
+                </tr>
+                <tr>
+                    <td>94 dB</td>
+                    <td>1,1 horas</td>
+                </tr>
+                <tr>
+                    <td>95 dB</td>
+                    <td>0,88 horas</td>
+                </tr>
+                <tr>
+                    <td>96 dB</td>
+                    <td>0,7 horas</td>
+                </tr>
+                <tr>
+                    <td>97 dB</td>
+                    <td>0,55 horas</td>
+                </tr>
+                <tr>
+                    <td>98 dB</td>
+                    <td>0,44 horas</td>
+                </tr>
+                <tr>
+                    <td>99 dB</td>
+                    <td>0,35 horas</td>
+                </tr>
+                <tr>
+                    <td>100 dB</td>
+                    <td>0,28 horas</td>
+                </tr>
+                <tr>
+                    <td>101 dB</td>
+                    <td>0,22 horas</td>
+                </tr>
+                <tr>
+                    <td>102 dB</td>
+                    <td>0,17 horas</td>
+                </tr>
+                <tr>
+                    <td>103 dB</td>
+                    <td>0,14 horas</td>
+                </tr>
+                <tr>
+                    <td>104 dB</td>
+                    <td>0,11 horas</td>
+                </tr>
+                <tr>
+                    <td>105 dB</td>
+                    <td>0,088 horas</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <h1>Calculadora de Insalubridade - NR-15 (Ruído)</h1>
+            <form id="insalubridadeForm">
+                <label for="db1">Nível de dB para período 1:</label>
+                <input type="number" id="db1" name="db1" required min="0" step="1">
+    
+                <label for="tempo1">Horas exposto no período 1:</label>
+                <input type="number" id="tempo1" name="tempo1" required min="0" step="0.01">
+    
+                <label for="db2">Nível de dB para período 2:</label>
+                <input type="number" id="db2" name="db2" required min="0" step="1">
+    
+                <label for="tempo2">Horas exposto no período 2:</label>
+                <input type="number" id="tempo2" name="tempo2" required min="0" step="0.01">
+    
+                <label for="db3">Nível de dB para período 3:</label>
+                <input type="number" id="db3" name="db3" required min="0" step="1">
+    
+                <label for="tempo3">Horas exposto no período 3:</label>
+                <input type="number" id="tempo3" name="tempo3" required min="0" step="0.01">
+    
+                <label for="db4">Nível de dB para período 4:</label>
+                <input type="number" id="db4" name="db4" required min="0" step="1">
+    
+                <label for="tempo4">Horas exposto no período 4:</label>
+                <input type="number" id="tempo4" name="tempo4" required min="0" step="0.01">
+    
+                <button type="button" onclick="calcularInsalubridade()">Calcular</button>
+            </form>
+            <div class="container">
+                <h1>Calculadora de Insalubridade - Salário</h1>
+                <form id="salarioForm">
+                    <label for="salario">Salário Base (R$):</label>
+                    <input type="number" id="salario" name="salario" required min="0" step="0.01">
+        
+                    <label for="percentual">Percentual de Insalubridade:</label>
+                    <select id="percentual" name="percentual" required>
+                        <option value="10">10% (Insalubridade Mínima)</option>
+                        <option value="20">20% (Insalubridade Média)</option>
+                        <option value="40">40% (Insalubridade Máxima)</option>
+                    </select>
+        
+                    <button type="button" onclick="calcularInsalubridade()">Calcular</button>
+                </form>
+        
+                <div id="result"></div>
+    
+    </div>
+
+    <script>
+        function calcularInsalubridade() {
+            const limitesNR15 = {
+                85: 8,
+                86: 6.7,
+                87: 5.3,
+                88: 4.2,
+                89: 3.3,
+                90: 2.6,
+                91: 2.1,
+                92: 1.7,
+                93: 1.4,
+                94: 1.1,
+                95: 0.88,
+                96: 0.7,
+                97: 0.55,
+                98: 0.44,
+                99: 0.35,
+                100: 0.28,
+                101: 0.22,
+                102: 0.17,
+                103: 0.14,
+                104: 0.11,
+                105: 0.088
+            };
+
+            const db1 = parseInt(document.getElementById('db1').value) || 0;
+            const tempo1 = parseFloat(document.getElementById('tempo1').value) || 0;
+            const db2 = parseInt(document.getElementById('db2').value) || 0;
+            const tempo2 = parseFloat(document.getElementById('tempo2').value) || 0;
+            const db3 = parseInt(document.getElementById('db3').value) || 0;
+            const tempo3 = parseFloat(document.getElementById('tempo3').value) || 0;
+            const db4 = parseInt(document.getElementById('db4').value) || 0;
+            const tempo4 = parseFloat(document.getElementById('tempo4').value) || 0;
+
+            const exposicoes = [
+                { db: db1, tempo: tempo1 },
+                { db: db2, tempo: tempo2 },
+                { db: db3, tempo: tempo3 },
+                { db: db4, tempo: tempo4 }
+            ];
+
+            let dose = 0;
+
+            for (let i = 0; i < exposicoes.length; i++) {
+                const limite = limitesNR15[exposicoes[i].db];
+                if (limite) {
+                    dose += exposicoes[i].tempo / limite;
+                } else {
+                    document.getElementById('result').innerHTML = `Nível de ruído (${exposicoes[i].db} dB) não encontrado na tabela da NR-15.`;
+                    return;
+                }
+            }
+
+            const resultado = dose >= 1 ? "Atenção ! Atividade insalubre" : "Atividade não insalubre";
+
+            document.getElementById('result').innerHTML = `Dose de exposição: ${dose.toFixed(2)}<br>${resultado}`;
+        }
+        function calcularInsalubridade() {
+            const salario = parseFloat(document.getElementById('salario').value) || 0;
+            const percentual = parseFloat(document.getElementById('percentual').value) || 0;
+
+            const adicional = (salario * percentual) / 100;
+            const salarioFinal = salario + adicional;
+
+            document.getElementById('result').innerHTML = `
+                Adicional de Insalubridade: R$ ${adicional.toFixed(2)}<br>
+                Salário com Insalubridade: R$ ${salarioFinal.toFixed(2)}
+            `;
+        }
+    </script>
+</body>
+</html>
