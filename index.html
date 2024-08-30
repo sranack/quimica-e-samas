@@ -113,6 +113,36 @@
             margin-top: 20px;
             font-weight: bold;
         }
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .formula-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .formula-section h2 {
+            color: #0066cc;
+        }
+        .formula-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .formula {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #e6e6e6;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
     </style>
 </head>
 <body>
@@ -259,6 +289,35 @@
             </form>
             
     
+    </div>
+    <h1>Fórmulas de Eletricidade e Resistência</h1>
+
+    <div class="formula-section">
+        <h2>Lei de Ohm</h2>
+        <p>A Lei de Ohm relaciona a tensão (U), a resistência (R) e a corrente (I) em um circuito elétrico.</p>
+        <div class="formula">U = R × I</div>
+        <p><strong>Aplicação prática:</strong> Utilizada para calcular a tensão aplicada a um componente, como um resistor, ou para determinar a corrente que passa por ele, dado seu valor de resistência.</p>
+    </div>
+
+    <div class="formula-section">
+        <h2>Resistência Equivalente em Série</h2>
+        <p>A resistência equivalente de resistores em série é a soma de todas as resistências.</p>
+        <div class="formula">Req = R1 + R2 + R3 + ...</div>
+        <p><strong>Aplicação prática:</strong> Utilizada para calcular a resistência total em um circuito em série, onde a corrente é a mesma em todos os resistores.</p>
+    </div>
+
+    <div class="formula-section">
+        <h2>Resistência Equivalente em Paralelo</h2>
+        <p>A resistência equivalente de resistores em paralelo é calculada pela fórmula:</p>
+        <div class="formula">1 / Req = 1 / R1 + 1 / R2 + 1 / R3 + ...</div>
+        <p><strong>Aplicação prática:</strong> Utilizada para determinar a resistência total em um circuito paralelo, onde a tensão é a mesma para todos os resistores, mas a corrente se divide entre eles.</p>
+    </div>
+
+    <div class="formula-section">
+        <h2>Resistência Equivalente para Dois Resistores em Paralelo</h2>
+        <p>Quando há dois resistores em paralelo, a fórmula simplificada para a resistência equivalente é:</p>
+        <div class="formula">Req = (R1 × R2) / (R1 + R2)</div>
+        <p><strong>Aplicação prática:</strong> Essa fórmula simplificada é usada para calcular rapidamente a resistência equivalente de dois resistores em paralelo, muito comum em circuitos eletrônicos.</p>
     </div>
 
     <script>
